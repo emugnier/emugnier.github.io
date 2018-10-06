@@ -1,0 +1,15 @@
+.grey {
+    background-color: rgba(70, 142, 160, 0.842);
+}
+
+.white {
+    background-color: white;
+}
+
+.right {
+    right: 50px;
+}
+
+#buttonCV {
+    margin-top: 40px;
+}
