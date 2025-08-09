@@ -1,15 +1,92 @@
-.grey {
-    background-color: rgba(70, 142, 160, 0.842);
+/* Base */
+:root {
+  --bg: #f6fafb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --brand: #2a8692;
+  --brand-dark: #1f6670;
+  --border: #e5e7eb;
 }
 
-.white {
-    background-color: white;
+html, body {
+  height: 100%;
 }
 
-.right {
-    right: 50px;
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+  line-height: 1.6;
 }
 
-#buttonCV {
-    margin-top: 40px;
+h1, h2, h3, h4 {
+  color: var(--text);
+  letter-spacing: -0.01em;
 }
+
+/* Header */
+.hero {
+  background: linear-gradient(180deg, rgba(42,134,146,0.08), rgba(42,134,146,0));
+  padding: 48px 0 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.lead { font-weight: 500; color: var(--muted); }
+
+.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+.btn-primary:hover { background: var(--brand-dark); border-color: var(--brand-dark); }
+
+/* Section nav */
+.section-nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.section-nav a {
+  display: inline-block;
+  padding: 12px 0;
+  margin-right: 16px;
+  color: var(--muted);
+}
+.section-nav a:hover { color: var(--brand); text-decoration: none; }
+
+/* Cards */
+.section-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.04);
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Publications */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pub-list li { padding: 14px 0; border-bottom: 1px dashed var(--border); }
+.pub-list li:last-child { border-bottom: 0; }
+
+.pub-title { font-weight: 600; }
+.pub-authors, .pub-venue { color: var(--muted); font-size: 0.95rem; }
+.pub-links { margin-top: 6px; }
+.pub-link { margin-right: 12px; }
+.pub-note { color: var(--muted); font-style: italic; }

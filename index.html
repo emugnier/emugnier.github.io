@@ -4,53 +4,95 @@
   <title>Eric Mugnier</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
-<body class="grey">
+<body>
 
-<div class="jumbotron">
-    <div class="row">
-            <div class="col-sm-3">
-                <img src="./photoResume.jpeg" class="rounded-circle"/>
-            </div>
-            <div class="col-sm-6 text-left">
-                <h1>Eric Mugnier</h1>
-                <h2>Fifth year Ph.D. student</h2>
-                <br>
-                <a href="https://www.sysnet.ucsd.edu/sysnet/">Systems and Networking Group</a><br>
-                <a href="https://cse.ucsd.edu/">Computer Science and Engineering</a><br>
-                <a href="https://www.ucsd.edu/">University of California, San Diego</a>
-                <br>
-                <br>
-                emugnier [at] ucsd (dot) edu
-                <br>
-                <a href="Resume.pdf">Resume</a><br>
-		
-            </div>
-            <div class="col-sm-2">
-            </div>
-    </div>
-</div>
-  
-<div class="container-fluid">
-  <div class="row">
-        <div class="col-sm-2">
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center text-md-left mb-3 mb-md-0">
+          <img src="./photoResume.jpeg" alt="Eric Mugnier" class="profile-photo rounded-circle">
         </div>
-    <div class="col-sm-8 rounded white">
-      <h3>About Me</h3>
-      <div>
-      <br>
-      <p>I am a Ph.D. student at <a href="http://opera.ucsd.edu/">Opera</a> and <a href="http://www.sysnet.ucsd.edu/sysnet/">Sysnet</a> Group at <a href="http://www.ucsd.edu/">UCSD</a>, working with <a href="http://cseweb.ucsd.edu/~yyzhou/">Prof. Yuanyuan Zhou</a>. </p>
-      <p>My research is focused on practical formal methods for real-world systems. I also worked on access control and security related issues.</p>
+        <div class="col-md-9">
+          <h1 class="mb-1">Eric Mugnier</h1>
+          <p class="lead mb-3">Fifth year Ph.D. student</p>
+          <p class="mb-2">
+            <a href="https://www.sysnet.ucsd.edu/sysnet/">Systems and Networking Group</a>
+            · <a href="https://cse.ucsd.edu/">Computer Science and Engineering</a>
+            · <a href="https://www.ucsd.edu/">University of California, San Diego</a>
+          </p>
+          <p class="mb-3">emugnier [at] ucsd (dot) edu</p>
+          <a class="btn btn-primary btn-sm" href="Resume.pdf">Resume</a>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-</div>
+  </header>
+
+  <nav class="section-nav">
+    <div class="container d-flex align-items-center">
+      <a href="#about" class="mr-3">About</a>
+      <a href="#publications">Publications</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section id="about" class="section-card">
+      <h3 class="section-title">About Me</h3>
+      <p>
+        I am a Ph.D. student at <a href="http://opera.ucsd.edu/">Opera</a> and
+        <a href="http://www.sysnet.ucsd.edu/sysnet/">Sysnet</a> Group at
+        <a href="http://www.ucsd.edu/">UCSD</a>, working with
+        <a href="http://cseweb.ucsd.edu/~yyzhou/">Prof. Yuanyuan Zhou</a>.
+      </p>
+      <p>
+        I specialize in practical formal methods for real-world systems,
+        leveraging LLMs to build tools tailored to the user's needs.
+        My previous work focused on access control and security related issues.
+      </p>
+    </section>
+
+    <section id="publications" class="section-card">
+      <h3 class="section-title">Publications</h3>
+      <p class="mb-3">
+        Also available on
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&authuser=1&user=qKEHXy0AAAAJ&gmla=AH8HC4xtKeaFPUrz_voESwtuylFL4YXMazUsHhFr17XC0bnU6jm70AMRB7lMZVolR5M-rmHjZfhHahllGfOuZwIpa60WqmlXC1MkcbI" target="_blank" rel="noopener">Google Scholar</a>.
+      </p>
+      <ul class="pub-list">
+        <li>
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2405.16792" target="_blank" rel="noopener">Laurel: Unblocking automated verification with large language models</a></div>
+          <div class="pub-authors"><strong>E Mugnier</strong>, EA Gonzalez, N Polikarpova, R Jhala, Y Zhou</div>
+          <div class="pub-venue">Proceedings of the ACM on Programming Languages 9 (OOPSLA1), 1519–1545, 2025</div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://arxiv.org/pdf/2505.12770" target="_blank" rel="noopener">Testing Access-Control Configuration Changes for Web Applications</a></div>
+          <div class="pub-authors">C Xiang, L Zhong, <strong>E Mugnier</strong>, N Nguyen, Y Zhou, T Xu</div>
+          <div class="pub-venue">arXiv preprint arXiv:2505.12770, 2025</div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://dl.acm.org/doi/pdf/10.1145/3627703.3629576" target="_blank" rel="noopener">Effective bug detection with unused definitions</a></div>
+          <div class="pub-authors">L Zhong, C Xiang, H Huang, B Shen, <strong>E Mugnier</strong>, Y Zhou</div>
+          <div class="pub-venue">Proceedings of the Nineteenth European Conference on Computer Systems, 2024</div>
+        </li>
+        <li>
+          <div class="pub-title"><a href="https://dl.acm.org/doi/pdf/10.1145/3646547.3689005" target="_blank" rel="noopener">Give and take: An end-to-end investigation of giveaway scam conversion rates</a></div>
+          <div class="pub-authors">E Liu, G Kappos, <strong>E Mugnier</strong>, L Invernizzi, S Savage, D Tao, K Thomas, G Voelker, S Meiklejohn</div>
+          <div class="pub-venue">Proceedings of the 2024 ACM on Internet Measurement Conference (IMC), 2024</div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 small text-muted">
+    © 2025 Eric Mugnier
+  </footer>
 
 </body>
 </html>
